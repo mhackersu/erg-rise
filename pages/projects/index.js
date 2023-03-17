@@ -39,9 +39,9 @@ export default function Page() {
       <Header menuItems={primaryMenu} />
 
       <Main>
-        <EntryHeader title="Projects" />
+        <EntryHeader title="Recipes" />
         <div className="container">
-          <Recipes projects={projectList} id="project-list" />
+          <Projects projects={projectList} id="project-list" />
           <LoadMore
             className="text-center"
             hasNextPage={data.projects.pageInfo.hasNextPage}
