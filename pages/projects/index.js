@@ -41,7 +41,7 @@ export default function Page() {
       <Main>
         <EntryHeader title="Projects" />
         <div className="container">
-          <Projects projects={projectList} id="project-list" />
+          <Recipes projects={projectList} id="project-list" />
           <LoadMore
             className="text-center"
             hasNextPage={data.projects.pageInfo.hasNextPage}
