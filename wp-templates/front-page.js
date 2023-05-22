@@ -51,66 +51,47 @@ export default function Component() {
       <Main className={styles.home}>
         <EntryHeader image={mainBanner} />
         <div className="container">
-          // <section className="hero text-center">
-          //   <Heading className={styles.heading} level="h1">
-          //     Welcome to your Blueprint
-          //   </Heading>
-          //   <p className={styles.description}>
-          //     Achieve unprecedented performance with modern frameworks and the
-          //     world&apos;s #1 open source CMS in one powerful headless platform.{' '}
-          //   </p>
-          //   <div className={styles.actions}>
-          //     <Button styleType="secondary" href="/contact-us">
-          //       GET STARTED
-          //     </Button>
-          //     <Button styleType="primary" href="/about">
-          //       LEARN MORE
-          //     </Button>
-          //   </div>
-          // </section>
-          // <section className="cta">
-          //   <CTA
-          //     Button={() => (
-          //       <Button href="/posts">
-          //         Get Started <FaArrowRight style={{ marginLeft: `1rem` }} />
-          //       </Button>
-          //     )}
-          //   >
-          //     <span>
-          //       Learn about Core Web Vitals and how Atlas can help you reach
-          //       your most demanding speed and user experience requirements.
-          //     </span>
-          //   </CTA>
-          // </section>
-          // <section className={styles.posts}>
-          //   <Heading className={styles.heading} level="h2">
-          //     Latest Posts
-          //   </Heading>
-          //   <Posts posts={data.posts?.nodes} id="posts-list" />
-          // </section>
-          // <section className="cta">
-          //   <CTA
-          //     Button={() => (
-          //       <Button href="/posts">
-          //         Get Started <FaArrowRight style={{ marginLeft: `1rem` }} />
-          //       </Button>
-          //     )}
-          //   >
-          //     <span>
-          //       Learn about Core Web Vitals and how Atlas can help you reach
-          //       your most demanding speed and user experience requirements.
-          //     </span>
-          //   </CTA>
-          // </section>
-          // <section className={styles.testimonials}>
-          //   <Heading className={styles.heading} level="h2">
-          //     Testimonials
-          //   </Heading>
-          //   <p className={styles.description}>
-          //     Here are just a few of the nice things our customers have to say.
-          //   </p>
-          //   <Testimonials testimonials={data?.testimonials?.nodes} />
-          // </section>
+          <section className="hero text-center">
+            <Heading className={styles.heading} level="h1">
+              WP Engine Rise ERG
+            </Heading>
+            <p className={styles.description}>
+            Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at WP Engine.{' '}
+            </p>
+            <div className={styles.actions}>
+              <Button styleType="primary" href="/about">
+                LEARN MORE
+              </Button>
+            </div>
+          </section>
+          <section className="cta">
+            <CTA
+              Button={() => (
+                <Button href="/projects">
+                  Explore Recipes <FaArrowRight style={{ marginLeft: `1rem` }} />
+                </Button>
+              )}
+            >
+              <span>
+                Explore the latest recipes from the Rise ERG!
+              </span>
+            </CTA>
+          </section>
+          <section className={styles.posts}>
+            <Heading className={styles.heading} level="h2">
+              Latest Posts
+            </Heading>
+            <Posts posts={data.posts?.nodes} id="posts-list" />
+          </section>
+          <section className={styles.testimonials}>
+            <Heading className={styles.heading} level="h2">
+              Testimonials
+            </Heading>
+            <p className={styles.description}>
+              Check out some of the stories from our ERG members.
+            </p>
+            <Testimonials testimonials={data?.testimonials?.nodes} />
+          </section>
         </div>
       </Main>
       <Footer menuItems={footerMenu} />
