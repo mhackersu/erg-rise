@@ -39,7 +39,7 @@ export default function Page() {
       <Header menuItems={primaryMenu} />
 
       <Main>
-        <EntryHeader title="Projects" />
+        <EntryHeader title="Recipes" />
         <div className="container">
           <Projects projects={projectList} id="project-list" />
           <LoadMore
