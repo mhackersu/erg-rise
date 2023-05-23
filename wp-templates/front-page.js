@@ -34,9 +34,9 @@ export default function Component() {
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
   const mainBanner = {
-    sourceUrl: '/static/banner.jpeg',
+    sourceUrl: '/static/rise_banner.png',
     mediaDetails: { width: 1200, height: 600 },
-    altText: 'Portfolio Banner',
+    altText: 'Rise ERG Banner',
   };
   return (
     <>
@@ -56,11 +56,13 @@ export default function Component() {
               WP Engine Rise ERG
             </Heading>
             <p className={styles.description}>
-            Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at WP Engine.{' '}
+            The Rise mission Rise aims to provide a safe, inclusive environment for the advancement, advocacy, and education of BIPOC and allies by intentionally increasing awareness of the perspectives and experiences of those at WP Engine and in our communities.
+            The Rise ERG seeks to unite employees through education opportunities and prioritizing diversity, equity, and inclusion at the forefront of WP Engine’s identity by inspiring active participation across the company.
+            {' '}
             </p>
             <div className={styles.actions}>
-              <Button styleType="primary" href="/about">
-                LEARN MORE
+              <Button styleType="primary" href="/contact">
+                Join Us
               </Button>
             </div>
           </section>
