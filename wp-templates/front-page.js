@@ -75,17 +75,56 @@ export default function Component() {
               )}
             >
               <span>
-                Explore the latest recipes from the Rise ERG!
+                Explore the latest recipes from the Rise ERG
               </span>
             </CTA>
           </section>
-          <section className={styles.posts}>
+          <section className="cta">
+            <CTA
+              Button={() => (
+                <Button href="/about">
+                  Explore BHM <FaArrowRight style={{ marginLeft: `1rem` }} />
+                </Button>
+              )}
+            >
+              <span>
+                Learn about Black Histoy Month
+              </span>
+            </CTA>
+          </section>
+          <section className="cta">
+            <CTA
+              Button={() => (
+                <Button href="/asian-pacific-american-heritage-month">
+                  Explore AAPI <FaArrowRight style={{ marginLeft: `1rem` }} />
+                </Button>
+              )}
+            >
+              <span>
+                Learn about Asian and Pacific Islander Month
+              </span>
+            </CTA>
+          </section>
+          <section className="cta">
+            <CTA
+              Button={() => (
+                <Button href="/native-american-heritage-month">
+                  Explore NAHM <FaArrowRight style={{ marginLeft: `1rem` }} />
+                </Button>
+              )}
+            >
+              <span>
+                Learn about Native American Heritage Month
+              </span>
+            </CTA>
+          </section>
+          {/* <section className={styles.posts}>
             <Heading className={styles.heading} level="h2">
               Latest Posts
             </Heading>
             <Posts posts={data.posts?.nodes} id="posts-list" />
-          </section>
-          <section className={styles.testimonials}>
+          </section> */}
+          {/* <section className={styles.testimonials}>
             <Heading className={styles.heading} level="h2">
               Testimonials
             </Heading>
@@ -93,7 +132,7 @@ export default function Component() {
               Check out some of the stories from our ERG members.
             </p>
             <Testimonials testimonials={data?.testimonials?.nodes} />
-          </section>
+          </section> */}
         </div>
       </Main>
       <Footer menuItems={footerMenu} />
