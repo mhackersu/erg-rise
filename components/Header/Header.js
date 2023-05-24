@@ -33,9 +33,9 @@ export default function Header({ className, menuItems }) {
               <a title="Home">
                 <Image
                   src="/logo.png"
-                  width={400}
+                  width={300}
                   height={80}
-                  alt="Blueprint media logo"
+                  alt="WPE Rise ERG Logo"
                   layout="responsive"
                 />
               </a>

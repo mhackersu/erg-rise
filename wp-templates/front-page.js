@@ -34,10 +34,16 @@ export default function Component() {
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
   const mainBanner = {
+    sourceUrl: '/static/rise_logo.png',
+    mediaDetails: { width: 2048, height: 923 },
+    altText: 'Rise ERG Banner Image',
+  };
+  
+  const secondaryBanner = {
     sourceUrl: '/static/rise_banner.png',
     mediaDetails: { width: 1200, height: 600 },
-    altText: 'Rise ERG Banner',
-  };
+    altText: 'Rise ERG Secondary Banner'
+  }
   return (
     <>
       <SEO title={siteTitle} description={siteDescription} />
@@ -50,6 +56,7 @@ export default function Component() {
 
       <Main className={styles.home}>
         <EntryHeader image={mainBanner} />
+        <EntryHeader image={secondaryBanner} />
         <div className="container">
           <section className="hero text-center">
             <Heading className={styles.heading} level="h1">
